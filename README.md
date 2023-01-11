@@ -4,7 +4,7 @@
 Visit the deployed application [Here.](https://re-gi.github.io/Work-Day-Scheduler/)
 
 ## Description
-This is a simple work-day scheduling application that allows the user to input events for each working hour from 9am to 5pm and save the events to their device.
+This is a simple work-day scheduling application that allows the user to input events for each working hour from 9am to 5pm and save the events to their device. This challenge was given by the UTA Web Development bootcamp to test and strengthen my understanding of third-party APIs.
 
 In the application header, the date is displayed with Day.js and refreshed every second to stay current.
 
@@ -24,9 +24,6 @@ Once the event is typed, the user should click on the blue save icon to the righ
 
 ![Screenshot of application with 'Company dinner.' typed into the 5pm textbox and the save button to its right highlighted](assets/images/WDS_newEvent.png)
 ![Screenshot of application in a saved and refreshed state with the saved events in their respective time-blocks](assets/images/WDS_savedEvent.png)
-
-## Credits
-
 
 ## Liscense
 Refer to liscensing in the project repository.

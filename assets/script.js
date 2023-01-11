@@ -13,6 +13,17 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
 
+  function handleSaveEvent(event) {
+    var key = $(this).parent().attr("id");
+    console.log(key);
+  
+    var input = $(this).siblings(".description").val();
+    console.log(input);
+    // localStorage.setItem()
+  };
+  
+  timeBlockEl.on("click", ".saveBtn", handleSaveEvent);
+
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -24,21 +35,12 @@ $(function () {
   // attribute of each time-block be used to do this?
   
   // TODO: Add code to display the current date in the header of the page.
-  // function displayTime() {
-  //   var rightNow = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
-  //   timeDisplayEl.text(rightNow);
-  // }
+  function displayDate() {
+    var today = dayjs().format('dddd, MMMM D');
+    currentDayEl.text(today);
+  }
 
-//   setInterval(displayTime, 1000);
+  displayDate();
+  setInterval(displayDate, 1000);
 });
 
-function handleSaveEvent(event) {
-  var key = $(this).parent().attr("id");
-  console.log(key);
-
-  var input = $(this).siblings(".description").val();
-  console.log(input);
-  // localStorage.setItem()
-};
-
-timeBlockEl.on("click", ".saveBtn", handleSaveEvent);

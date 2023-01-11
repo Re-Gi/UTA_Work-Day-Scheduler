@@ -1,7 +1,6 @@
 var currentDayEl = $("#currentDay");
 var timeBlockEl = $(".time-block");
 
-
 $(function () {
 
   // save button handler: saves text input to local storage using the time-block id as the key
